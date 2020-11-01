@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCatch", "WebCatch.csproj", "{EA7F8A74-B0AE-485A-A226-5AF4C1CDDD24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCatch", "WebCatch.csproj", "{EA7F8A74-B0AE-485A-A226-5AF4C1CDDD24}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{46E98345-5AF9-4479-86CA-720717C0621D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCatchTests", "..\WebCatchTests\WebCatchTests.csproj", "{D7647B67-270D-4FC8-8F28-C9169C7574A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCatchTests", "..\WebCatchTests\WebCatchTests.csproj", "{D7647B67-270D-4FC8-8F28-C9169C7574A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1624660B-245D-461F-99E4-483ACBB0DA63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +30,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{EA7F8A74-B0AE-485A-A226-5AF4C1CDDD24} = {1624660B-245D-461F-99E4-483ACBB0DA63}
 		{D7647B67-270D-4FC8-8F28-C9169C7574A3} = {46E98345-5AF9-4479-86CA-720717C0621D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
