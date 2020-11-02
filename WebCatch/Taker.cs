@@ -19,7 +19,7 @@ namespace WebCatch
                 List<Task> tasks = new List<Task>();
                 links.ForEach(item => {
                     string file = String.Format("{0}\\{1}{2}", pathToSave, item.Id.ToString(), extension) ;
-                    var task = new Task(() => { DownloadData(item.Url, file); });
+                    var task = new Task(() => { DownloadData(item.Url, GetFileName(pathToSave, item.Id.ToString(), extension)); });
                     task.Start();
                     tasks.Add(task);                    
                 });
@@ -28,6 +28,10 @@ namespace WebCatch
             }
         }
 
+        private string GetFileName(string path, string id, string extension)
+        {
+            return String.Format("{0}\\{1}{2}", path, id, extension);
+        }
         private void DownloadData(string url, string fileName)
         {
             WebClient myWebClient = new WebClient();
