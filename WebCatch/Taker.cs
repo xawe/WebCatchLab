@@ -17,8 +17,7 @@ namespace WebCatch
             if (links.Any())
             {
                 List<Task> tasks = new List<Task>();
-                links.ForEach(item => {
-                    string file = String.Format("{0}\\{1}{2}", pathToSave, item.Id.ToString(), extension) ;
+                links.ForEach(item => {                    
                     var task = new Task(() => { DownloadData(item.Url, GetFileName(pathToSave, item.Id.ToString(), extension)); });
                     task.Start();
                     tasks.Add(task);                    
